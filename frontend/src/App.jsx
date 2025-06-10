@@ -62,7 +62,7 @@ function App() {
       console.log('📤 Envoi vers le backend:', taskData);
 
       // Envoyer vers le backend
-      const response = await fetch('http://localhost:3001/schedule-task', {
+      const response = await fetch('https://todo-bot-backend.onrender.com/schedule-task', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
